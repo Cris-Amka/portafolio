@@ -1,0 +1,113 @@
+/* Estilos generales de la página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #7a7ab4, #9797ca);
+    color: #2c3e50; /* Texto oscuro general para que contraste con el main blanco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Contenedor principal de la tarjeta del juego */
+main {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Títulos y textos */
+h1 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.instrucciones {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Contenedor de los botones de selección */
+.opciones {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+/* Estilo base para los botones */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Estilos para los resultados y marcador */
+#resultado {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+#resultado h2 {
+    font-size: 18px;
+    color: #34495e;
+    margin-bottom: 8px;
+}
+
+#resultado p, #marcador-seccion p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+#marcador-seccion {
+    border-top: 2px solid #ecf0f1;
+    padding-top: 15px;
+}
+.btn-reiniciar {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #45aeef;
+    color: #fffffe;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-reiniciar:hover {
+    background-color: #09347e;
+    box-shadow: 0 0 10px rgba(16, 67, 86, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-reiniciar:active {
+    transform: translateY(0);
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="../js/calculadora.js" defer></script>
+    <link rel="stylesheet" href="../css/calculador.css">
+    
+</head>
+
+<body>
+    <div class="calculadora">
+        <div class="autor">Creado por CRISTABEL AKACHI OLERU</div>
+    <input type="text" id="pantalla" class="display" value="0" readonly>
+        <div class="buttons">
+            <button class="clear" onclick="borrar()">C</button>
+            <button class="operator" onclick="escribir('%')">%</button>
+            <button class="operator" onclick="escribir('/')">/</button>
+            <button class="operator" onclick="escribir('*')">*</button>
+
+            <button onclick="escribir('7')">7</button>
+            <button onclick="escribir('8')">8</button>
+            <button onclick="escribir('9')">9</button>
+            <button class="operator" onclick="escribir('-')">-</button>
+
+            <button onclick="escribir('4')">4</button>
+            <button onclick="escribir('5')">5</button>
+            <button onclick="escribir('6')">6</button>
+            <button class="operator" onclick="escribir('+')">+</button>
+
+            <button onclick="escribir('1')">1</button>
+            <button onclick="escribir('2')">2</button>
+            <button onclick="escribir('3')">3</button>
+            <button class="operator" onclick="calcular()">=</button>
+
+            <button class="zero" onclick="escribir('0')">0</button>
+            <button onclick="escribir('.')">.</button>
+        </div>
+    </div>
+</body>
+
+</html>
